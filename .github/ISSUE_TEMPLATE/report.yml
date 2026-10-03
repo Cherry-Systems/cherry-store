@@ -1,0 +1,17 @@
+name: Report a package
+description: Something in the Cherry Store is harmful, broken on purpose, or not what it says.
+title: "Report: "
+labels: [report]
+body:
+  - type: input
+    id: package
+    attributes:
+      label: Package name
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What's wrong with it?
+    validations:
+      required: true
