@@ -1,0 +1,33 @@
+name: Rescan
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: store-index
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rescan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq clamav python3-cryptography > /dev/null
+          sudo systemctl stop clamav-freshclam || true
+          sudo freshclam --quiet
+      - name: Scan every package's newest version with today's virus signatures
+        run: /usr/bin/python3 tools/store.py rescan
+      - name: Save
+        run: |
+          git add index.json
+          git diff --cached --quiet && exit 0
+          git -c user.name="Cherry Store" -c user.email=store@cherry-systems.invalid commit -q -m "Nightly virus scan"
+          git push -q
