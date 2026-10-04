@@ -1,4 +1,39 @@
 {
  "format": 1,
- "packages": {}
+ "packages": {
+  "hello-cherry": {
+   "created": 1791157438,
+   "description": "Says hello. It's here to show that publishing to and installing from\nthe Cherry Store works. Run 'hello-cherry' in a terminal or open it\nfrom the menu.",
+   "homepage": "https://github.com/Cherry-Systems/cherry-store",
+   "icon_url": "",
+   "key_id": "d473ce7f11034288",
+   "kind": "native",
+   "latest": "1.0.0",
+   "license": "MIT",
+   "name": "hello-cherry",
+   "public_key": "pg2Ao1yaT8xDbpt5W37V9fLYL5EzDExIOe6wcEvLBFM=",
+   "publisher": "github:blhcode",
+   "summary": "A tiny test app for the Cherry Store",
+   "versions": {
+    "1.0.0": {
+     "architecture": "all",
+     "created": 1791157438,
+     "depends": "",
+     "scan": {
+      "at": 1791157435,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "22c840976612425f5c84170d30ac1f065efba792cbfa484064041301ed29bdd8",
+     "signature": "RI6DZTuBFbfu9+FPi7Syk8UpjVMndLM4JNYA/X32xYm/cSrWLktvsBR4j/g+utPHcuK5Pi3MrcJMjfKqOki4Ag==",
+     "size": 10232,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/hello-cherry_1.0.0/hello-cherry_1.0.0_all.deb",
+     "via": "github:blhcode",
+     "warnings": [],
+     "yanked": false
+    }
+   }
+  }
+ },
+ "updated": 1791157438
 }
