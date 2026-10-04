@@ -8,7 +8,7 @@
    "icon_url": "",
    "key_id": "d473ce7f11034288",
    "kind": "native",
-   "latest": "1.0.0",
+   "latest": "1.0.1",
    "license": "MIT",
    "name": "hello-cherry",
    "public_key": "pg2Ao1yaT8xDbpt5W37V9fLYL5EzDExIOe6wcEvLBFM=",
@@ -31,9 +31,26 @@
      "via": "github:blhcode",
      "warnings": [],
      "yanked": false
+    },
+    "1.0.1": {
+     "architecture": "all",
+     "created": 1791158294,
+     "depends": "",
+     "scan": {
+      "at": 1791158292,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "3a5d5a859134c4742ee058feac5da54c35f35927173079288e9316e532594bf3",
+     "signature": "DyDflQcO8PE73FXR2Llbqzs5p0CtL5NBd4q5o6+oDO81PX7g6rd1n0ZTWTNZEx5OrRp+BDHGEhFi7dT2iJ/sCw==",
+     "size": 10228,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/hello-cherry_1.0.1/hello-cherry_1.0.1_all.deb",
+     "via": "cherry:blhcode",
+     "warnings": [],
+     "yanked": false
     }
    }
   }
  },
- "updated": 1791157438
+ "updated": 1791158294
 }
