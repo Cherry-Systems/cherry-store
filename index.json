@@ -20,7 +20,7 @@
      "created": 1791189544,
      "depends": "cherry-move (>= 1.0.4), python3 (>= 3.11), libnotify-bin, policykit-1 | pkexec, desktop-file-utils, dpkg, apt, ca-certificates",
      "scan": {
-      "at": 1791189541,
+      "at": 1791196009,
       "detail": "",
       "status": "clean"
      },
@@ -56,7 +56,7 @@
      "created": 1791189497,
      "depends": "python3 (>= 3.9), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.2), python3-cryptography, python3-qrcode, python3-pil, python3-zstandard, udisks2, xdg-user-dirs, ca-certificates",
      "scan": {
-      "at": 1791189494,
+      "at": 1791196018,
       "detail": "",
       "status": "clean"
      },
@@ -167,7 +167,7 @@
      "created": 1791189606,
      "depends": "python3 (>= 3.10), python3-cryptography, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, dpkg, apt, ca-certificates, pkexec | policykit-1",
      "scan": {
-      "at": 1791189603,
+      "at": 1791196026,
       "detail": "",
       "status": "clean"
      },
@@ -219,7 +219,7 @@
      "created": 1791158294,
      "depends": "",
      "scan": {
-      "at": 1791158292,
+      "at": 1791196034,
       "detail": "",
       "status": "clean"
      },
@@ -234,5 +234,5 @@
    }
   }
  },
- "updated": 1791189606
+ "updated": 1791196034
 }
