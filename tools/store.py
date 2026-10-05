@@ -39,6 +39,7 @@ MAX_SIZE = 1024 * 1024 * 1024
 NAME_RE = re.compile(r"[a-z0-9][a-z0-9.+-]{1,62}")
 VERSION_RE = re.compile(r"[0-9][0-9A-Za-z.+~-]{0,63}")
 RESERVED = re.compile(r"^(cherry($|-)|admin$|root$|system$|official$|debian$|apt$)")
+OFFICIAL_KEYS = HERE / "tools/official-keys.txt"  # Cherry OS's release keys; only they may use cherry-* names
 ARCHES = {"amd64", "arm64", "all"}
 SCRIPTS = ("preinst", "postinst", "prerm", "postrm", "config", "triggers")
 USUAL_PLACES = ("/opt/", "/usr/bin/", "/usr/games/", "/usr/lib/", "/usr/libexec/", "/usr/share/")
@@ -68,6 +69,14 @@ def verify(public_b64: str, message: bytes, signature_b64: str) -> bool:
         return True
     except (InvalidSignature, ValueError, TypeError):
         return False
+
+
+def official(public_key: str) -> bool:
+    try:
+        keys = {line.split("#")[0].strip() for line in OFFICIAL_KEYS.read_text().splitlines()}
+    except OSError:
+        return False
+    return bool(public_key) and public_key in keys
 
 
 def tag_for(name: str, version: str) -> str:
@@ -222,7 +231,7 @@ def check(deb: Path, request: dict, via: str, no_scan: bool = False) -> dict:
             raise Rejected(f"'{name}' belongs to another publisher (it's signed with a different key)")
         if version in pkg["versions"]:
             raise Rejected(f"{name} {version} is already published; bump the version")
-    elif RESERVED.match(name):
+    elif RESERVED.match(name) and not (name.startswith("cherry") and official(public_key)):
         raise Rejected("that name is reserved for Cherry OS itself")
 
     members, files = control_members(deb), contents(deb)
@@ -248,7 +257,7 @@ def add(result: dict, url: str) -> None:
     index = load_index()
     name = result["name"]
     pkg = index["packages"].setdefault(name, {
-        "name": name, "publisher": result["via"], "key_id": result["key_id"], "public_key": result["public_key"],
+        "name": name, "publisher": "Cherry OS" if official(result["public_key"]) else result["via"], "key_id": result["key_id"], "public_key": result["public_key"],
         "created": int(time.time()), "versions": {},
     })
     pkg["versions"][result["version"]] = {

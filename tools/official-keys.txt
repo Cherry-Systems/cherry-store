@@ -1,0 +1,3 @@
+# Cherry OS release keys (base64 Ed25519 public keys). Only packages signed with one of these
+# may use names starting with "cherry". The client has the same list (OFFICIAL_KEYS in pkg.py).
+xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=  # c944d23d425e87b2, made 2026-10-05
