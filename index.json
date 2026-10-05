@@ -1,6 +1,41 @@
 {
  "format": 1,
  "packages": {
+  "cherry-move": {
+   "created": 1791189497,
+   "description": "Cherry Move packs your documents, photos, browser data and more, encrypts them on your\ncomputer, and keeps them on USB sticks, your own cloud drive or a NAS until the new one\nbrings them back.",
+   "homepage": "",
+   "icon_url": "",
+   "key_id": "c944d23d425e87b2",
+   "kind": "native",
+   "latest": "1.0.4",
+   "license": "",
+   "name": "cherry-move",
+   "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
+   "publisher": "Cherry OS",
+   "summary": "Move your files to a new computer or Linux distro",
+   "versions": {
+    "1.0.4": {
+     "architecture": "all",
+     "created": 1791189497,
+     "depends": "python3 (>= 3.9), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.2), python3-cryptography, python3-qrcode, python3-pil, python3-zstandard, udisks2, xdg-user-dirs, ca-certificates",
+     "scan": {
+      "at": 1791189494,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "a4e9fb1ece64c49b316982dedaa4cda0bc61ce363082dd6e27dc9ec7f99f3873",
+     "signature": "iiruebGjT+NbgvDdK86qZX8v+HfB0J3wi18tg+ABbQnrbV1KayohGdWaoZ9uj0g9ZM9q1RNhxWWc+0A4R44uAw==",
+     "size": 43228,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-move_1.0.4/cherry-move_1.0.4_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Puts files outside the usual app folders: /etc/xdg/autostart/cherry-move-pending.desktop, /etc/xdg/autostart/cherry-move-watch.desktop."
+     ],
+     "yanked": false
+    }
+   }
+  },
   "cherry-store-client": {
    "created": 1791159943,
    "description": "Browse, install, update and remove apps from the Cherry Store. Every app is an\nordinary Debian package, signed by its publisher and virus-scanned, and installed\nwith apt. Includes the Cherry Store app and the cherry command, and keeps itself\nup to date.",
@@ -144,5 +179,5 @@
    }
   }
  },
- "updated": 1791172557
+ "updated": 1791189497
 }
