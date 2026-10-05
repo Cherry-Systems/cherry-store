@@ -1,6 +1,41 @@
 {
  "format": 1,
  "packages": {
+  "cherry-store-client": {
+   "created": 1791159943,
+   "description": "Browse, install, update and remove apps from the Cherry Store. Every app is an\nordinary Debian package, signed by its publisher and virus-scanned, and installed\nwith apt. Includes the Cherry Store app and the cherry command, and keeps itself\nup to date.",
+   "homepage": "https://cherry-cloud.isaiahcannings.workers.dev",
+   "icon_url": "",
+   "key_id": "c944d23d425e87b2",
+   "kind": "native",
+   "latest": "1.0.0",
+   "license": "",
+   "name": "cherry-store-client",
+   "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
+   "publisher": "Cherry OS",
+   "summary": "Cherry Store: apps published by anyone, for Debian-based Linux",
+   "versions": {
+    "1.0.0": {
+     "architecture": "all",
+     "created": 1791159943,
+     "depends": "python3 (>= 3.10), python3-cryptography, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, dpkg, apt, ca-certificates, pkexec | policykit-1",
+     "scan": {
+      "at": 1791159940,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "7cc8ac24ec600b03d7b8079307b000ae9204099c16efb0f6f8756b851a2b0457",
+     "signature": "aMmAycozPSqpVyqD5KZBtiabd8B9d4tqSTdfWmy8CoFgCeVWbrj7eNIWVta5vWX+kYkwkCgskIs+0fQto2KgDw==",
+     "size": 21738,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-store-client_1.0.0/cherry-store-client_1.0.0_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Runs its own install scripts as administrator (postinst, prerm)."
+     ],
+     "yanked": false
+    }
+   }
+  },
   "hello-cherry": {
    "created": 1791157438,
    "description": "Says hello. It's here to show that publishing to and installing from\nthe Cherry Store works. Run 'hello-cherry' in a terminal or open it\nfrom the menu.",
@@ -52,5 +87,5 @@
    }
   }
  },
- "updated": 1791158294
+ "updated": 1791159943
 }
