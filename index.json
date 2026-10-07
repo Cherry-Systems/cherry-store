@@ -124,7 +124,7 @@
    "icon_url": "",
    "key_id": "c944d23d425e87b2",
    "kind": "native",
-   "latest": "1.0.8",
+   "latest": "1.0.9",
    "license": "",
    "name": "cherry-move",
    "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
@@ -220,6 +220,25 @@
      "signature": "noO2QQ0TEfCosreuMTX9NVpt0WWUSB0ocDWhZP+6YKXlW1I5GMdMQeWbrg9o6sad7gbjdLCTmw6CdEce/iDVAA==",
      "size": 62496,
      "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-move_1.0.8/cherry-move_1.0.8_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Puts files outside the usual app folders: /etc/xdg/autostart/cherry-move-pending.desktop, /etc/xdg/autostart/cherry-move-watch.desktop."
+     ],
+     "yanked": false
+    },
+    "1.0.9": {
+     "architecture": "all",
+     "created": 1791415709,
+     "depends": "python3 (>= 3.9), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.2), python3-cryptography, python3-qrcode, python3-pil, python3-zstandard, udisks2, xdg-user-dirs, ca-certificates",
+     "scan": {
+      "at": 1791415706,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "47c5c9c61cc8c3dfe1f705f9c0d83f8b4b08a362180019e7b5602f68c82417a9",
+     "signature": "IkcBrE8+ujaA3+JXdyQJDzizftCL62xlRWYDyKsSsKV4dAWqFVhdyA4CKrzk2sDn633tXVoziUzCHg1wdI/sCQ==",
+     "size": 64328,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-move_1.0.9/cherry-move_1.0.9_all.deb",
      "via": "github:blhcode",
      "warnings": [
       "Puts files outside the usual app folders: /etc/xdg/autostart/cherry-move-pending.desktop, /etc/xdg/autostart/cherry-move-watch.desktop."
@@ -466,5 +485,5 @@
    }
   }
  },
- "updated": 1791368199
+ "updated": 1791415709
 }
