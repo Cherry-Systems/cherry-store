@@ -235,7 +235,7 @@
    "icon_url": "",
    "key_id": "c944d23d425e87b2",
    "kind": "native",
-   "latest": "1.0.7",
+   "latest": "1.0.8",
    "license": "",
    "name": "cherry-store-client",
    "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
@@ -393,6 +393,25 @@
       "Runs its own install scripts as administrator (postinst, prerm)."
      ],
      "yanked": false
+    },
+    "1.0.8": {
+     "architecture": "all",
+     "created": 1791333542,
+     "depends": "python3 (>= 3.10), python3-cryptography, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, dpkg, apt, ca-certificates, pkexec | policykit-1",
+     "scan": {
+      "at": 1791333537,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "d4cc54a0a209b7067a6393e1d2378dd0da739c0ded236756770ca201a7434d69",
+     "signature": "M2mc2Aav05cuzW2dluStnbm3oNjzkj3B0OomXGITuCh6yJYXFQs31BgLYvAvVU8ffjj5LFNpPKGBxZVCXarBAw==",
+     "size": 22816,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-store-client_1.0.8/cherry-store-client_1.0.8_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Runs its own install scripts as administrator (postinst, prerm)."
+     ],
+     "yanked": false
     }
    }
   },
@@ -447,5 +466,5 @@
    }
   }
  },
- "updated": 1791333474
+ "updated": 1791333542
 }
