@@ -144,13 +144,32 @@
    "icon_url": "",
    "key_id": "c944d23d425e87b2",
    "kind": "native",
-   "latest": "1.0.9",
+   "latest": "1.0.10",
    "license": "",
    "name": "cherry-move",
    "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
    "publisher": "Cherry OS",
    "summary": "Move your files to a new computer or Linux distro",
    "versions": {
+    "1.0.10": {
+     "architecture": "all",
+     "created": 1791419541,
+     "depends": "python3 (>= 3.9), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.2), python3-cryptography, python3-qrcode, python3-pil, python3-zstandard, udisks2, xdg-user-dirs, ca-certificates",
+     "scan": {
+      "at": 1791419538,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "eda4171b64d4b2e3528c4dd83398a1b1be5a715bd29b44c26469ee56b46136e2",
+     "signature": "TsLAFa9+uTcn4bXcieBIi9wKqGCXCcjcLqsetfYcIhgKRE7gKGXQbs33ObBGzNvjnY8TtqF5YVJD/c3RnLdDCg==",
+     "size": 64772,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-move_1.0.10/cherry-move_1.0.10_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Puts files outside the usual app folders: /etc/xdg/autostart/cherry-move-pending.desktop, /etc/xdg/autostart/cherry-move-watch.desktop."
+     ],
+     "yanked": false
+    },
     "1.0.4": {
      "architecture": "all",
      "created": 1791189497,
@@ -524,5 +543,5 @@
    }
   }
  },
- "updated": 1791415822
+ "updated": 1791419541
 }
