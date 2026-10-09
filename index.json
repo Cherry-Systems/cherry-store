@@ -547,7 +547,7 @@
    "icon_url": "",
    "key_id": "c944d23d425e87b2",
    "kind": "native",
-   "latest": "1.0.15",
+   "latest": "1.0.16",
    "license": "",
    "name": "cherry-store-client",
    "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
@@ -700,6 +700,25 @@
      "signature": "YkTFGKZsYSSr8clr9RIwh1FbbsNimY042HD450Z7xMz1+QUCY7W9rvaJsz1EDi6m4P14mxDFlELeRV9C+xGzAg==",
      "size": 22840,
      "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-store-client_1.0.15/cherry-store-client_1.0.15_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Runs its own install scripts as administrator (postinst, prerm)."
+     ],
+     "yanked": false
+    },
+    "1.0.16": {
+     "architecture": "all",
+     "created": 1791588326,
+     "depends": "python3 (>= 3.10), python3-cryptography, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, dpkg, apt, ca-certificates, pkexec | policykit-1",
+     "scan": {
+      "at": 1791588323,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "2d3513d6d822f0a985109d06bb524a14493712dcccfc07c089e07ecd943a1d3e",
+     "signature": "xVpzGb+c+W51OJHTaTins4UUjzYMUyhalJrv3XoN+7Ht5Xuy1AX+Fuyeb1g5DZHPXBgToSKz2FTX0U6/m4uqDg==",
+     "size": 22852,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-store-client_1.0.16/cherry-store-client_1.0.16_all.deb",
      "via": "github:blhcode",
      "warnings": [
       "Runs its own install scripts as administrator (postinst, prerm)."
@@ -911,5 +930,5 @@
    }
   }
  },
- "updated": 1791588197
+ "updated": 1791588327
 }
