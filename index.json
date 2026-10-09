@@ -8,7 +8,7 @@
    "icon_url": "",
    "key_id": "c944d23d425e87b2",
    "kind": "native",
-   "latest": "1.0.12",
+   "latest": "1.0.13",
    "license": "",
    "name": "cherry-desktop",
    "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
@@ -68,6 +68,26 @@
      "signature": "5cF56kXpa4janX+uaUC2A8TaisNt4VEnu4JPTDJ/Lsrz+5+IZ4+Ol2Uh8JekXKAWddwZLwBPMm0SD7fO/igIBQ==",
      "size": 84216,
      "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-desktop_1.0.12/cherry-desktop_1.0.12_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Runs its own install scripts as administrator (postinst, prerm).",
+      "Puts files outside the usual app folders: /etc/xdg/autostart/cherry-welcome.desktop, /etc/xdg/mimeapps.list."
+     ],
+     "yanked": false
+    },
+    "1.0.13": {
+     "architecture": "all",
+     "created": 1791546205,
+     "depends": "cherry-move (>= 1.0.13), python3 (>= 3.11), libnotify-bin, policykit-1 | pkexec, desktop-file-utils, dpkg, apt, ca-certificates",
+     "scan": {
+      "at": 1791546201,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "93acb8584122d9efdebefb2aa554140fef2928bc4ab1cd1f5145c89721934788",
+     "signature": "mh79eFwiLU9KP2SPzQZvW5X/+m473u2urGOMOGdWD2AWJ8X92b1a7cJDEEDQ2fj28Xto6LpV8tQOTw7ddSFFBw==",
+     "size": 85090,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-desktop_1.0.13/cherry-desktop_1.0.13_all.deb",
      "via": "github:blhcode",
      "warnings": [
       "Runs its own install scripts as administrator (postinst, prerm).",
@@ -717,5 +737,5 @@
    }
   }
  },
- "updated": 1791546144
+ "updated": 1791546205
 }
