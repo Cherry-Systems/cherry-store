@@ -8,7 +8,7 @@
    "icon_url": "",
    "key_id": "c944d23d425e87b2",
    "kind": "native",
-   "latest": "1.0.20",
+   "latest": "1.0.21",
    "license": "",
    "name": "cherry-desktop",
    "public_key": "xkgIvrCrIG4pSUJDNjOYqhHSnVw3Mfn1Dz9hn6cvSr0=",
@@ -232,6 +232,26 @@
      "warnings": [
       "Runs its own install scripts as administrator (postinst, prerm).",
       "Puts files outside the usual app folders: /etc/xdg/autostart/cherry-welcome.desktop, /etc/xdg/mimeapps.list."
+     ],
+     "yanked": false
+    },
+    "1.0.21": {
+     "architecture": "all",
+     "created": 1791777040,
+     "depends": "cherry-move (>= 1.0.21), python3 (>= 3.11), libnotify-bin, policykit-1 | pkexec, desktop-file-utils, dpkg, apt, ca-certificates",
+     "scan": {
+      "at": 1791777037,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "6701b82ba041a0fcdd091f956440c739553d7207cd8f71e600e8a4d41a151f17",
+     "signature": "bL4hvR0i+XKkHR+RZsHPMvUl1VxSNF+jY3oExXhOcYel0XAncCqU6clJn+1V8XKFeIZQehr9V8f6M+9/dIZCCw==",
+     "size": 264492,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/cherry-desktop_1.0.21/cherry-desktop_1.0.21_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Runs its own install scripts as administrator (postinst, prerm).",
+      "Puts files outside the usual app folders: /etc/xdg/autostart/cherry-welcome.desktop, /etc/xdg/hypr/hypridle.conf, /etc/xdg/hypr/hyprland.lua, /etc/xdg/hypr/hyprlock.conf, /etc/xdg/mimeapps.list."
      ],
      "yanked": false
     },
@@ -1230,5 +1250,5 @@
    }
   }
  },
- "updated": 1791776986
+ "updated": 1791777040
 }
