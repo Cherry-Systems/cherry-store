@@ -1092,6 +1092,41 @@
     }
    }
   },
+  "focus-guard": {
+   "created": 1791775516,
+   "description": "Focus Guard is a Linux (X11) focus blocker for GNOME. Choose allowed apps\nand websites at the start of a session; everything else is blocked with a\nclear \"stay focused\" page until you allow it or end the session.",
+   "homepage": "https://github.com/blhcode/focus-guard",
+   "icon_url": "",
+   "key_id": "d473ce7f11034288",
+   "kind": "native",
+   "latest": "0.2.3-1",
+   "license": "",
+   "name": "focus-guard",
+   "public_key": "pg2Ao1yaT8xDbpt5W37V9fLYL5EzDExIOe6wcEvLBFM=",
+   "publisher": "github:blhcode",
+   "summary": "Block distracting apps and websites during focus sessions",
+   "versions": {
+    "0.2.3-1": {
+     "architecture": "all",
+     "created": 1791775516,
+     "depends": "python3 (>= 3.12), python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, gir1.2-ayatanaappindicator3-0.1, python3-dnslib, xdotool, x11-utils, network-manager, openssl, libnss3-tools, nftables | iptables",
+     "scan": {
+      "at": 1791775513,
+      "detail": "",
+      "status": "clean"
+     },
+     "sha256": "dd49e8beea19b8d7ccfd0684f19d9b590d7cdc6fe0d42d2e0bdde170ff92a048",
+     "signature": "RE7aSVmt1Ra/ce1ABL8enuOAKWIYROSVOsMt6j3bnwIzG3imJAYEio81/tfSmsQU6poUPQSSKeIlbTPExu7LAA==",
+     "size": 84094,
+     "url": "https://github.com/Cherry-Systems/cherry-store/releases/download/focus-guard_0.2.3-1/focus-guard_0.2.3-1_all.deb",
+     "via": "github:blhcode",
+     "warnings": [
+      "Runs its own install scripts as administrator (postinst, postrm)."
+     ],
+     "yanked": false
+    }
+   }
+  },
   "hello-cherry": {
    "created": 1791157438,
    "description": "Says hello. It's here to show that publishing to and installing from\nthe Cherry Store works. Run 'hello-cherry' in a terminal or open it\nfrom the menu.",
@@ -1143,5 +1178,5 @@
    }
   }
  },
- "updated": 1791712848
+ "updated": 1791775516
 }
